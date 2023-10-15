@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: url(./fundo.jpg);
+    margin-top: 7%;
+}
+form{
+    background-color: rgb(4, 114, 142);
+    width: 500px;
+    margin: 50px auto;
+    padding: 5px;    
+}
+form > h1{
+    text-align: center;
+    padding: 20px;
+    color: rgb(219, 99, 127);
+}
+label{
+    color: rgb(219, 99, 127);
+    padding: 3px;
+    font-weight: bold;
+}
+form > ul{
+    margin: auto;
+    width: 400px;
+}
+form > ul > li{
+    margin-top: 10px;
+    list-style: none;
+}
+input{
+    padding: 5px;
+    width: 400px;
+    height: 40px;
+    border-style: none;
+    background-color: rgba(101, 96, 96, 0.663);
+    font-size: 1em;
+    color: white;
+}
+.btn{
+    font-size: 1em;
+    width: 130px;
+    height: 40px;
+    border-style: none;
+    background-color:rgb(219, 99, 127);
+    color: white;
+    margin: 15px;
+}
+.btn:hover{
+    background-color: rgb(201, 114, 114);
+    color: rgb(187, 187, 187);
+}
+.btn:active{
+    background-color: rgb(4, 4, 77);
+    color: white;
+}
+
+legend{
+    margin-left: 160px;
+    color: rgb(232, 67, 106);
+}
+.conteiner-form {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 360px;
+}
+
+.conteiner-form > input{
+    margin: 10px;
+    width: 20px;
+}
+.container-enviar{
+    display: flex;
+    width: 260px;
+    margin-left: 35%;
+
+}
+
+

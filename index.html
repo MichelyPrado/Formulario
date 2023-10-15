@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <h1>Fazer Matrícula </h1>
+        <ul>
+            <li>
+                <label for="name">Nome:</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="Inserir seu primeiro nome Ex: José"/>
+            </li>
+            <li>
+                <label for="lastname">Sobrenome:</label>
+                <br>
+                <input type="text" id="lastname" name="lastname" placeholder="Inserir seu sobrenome  Ex: Silva"/>
+            </li>
+            <li>
+                <label for="email">E-mail:</label>
+                <br>
+                <input type="email" id="email" name="email" autocomplete="off" placeholder="Inserir seu e-mail Ex: josesilva@gmail.com"/>
+            </li>
+            <li>
+                <label for="curso">Curso desejado:</label>
+                <br>
+                <input type="name" id="curso" name="curso" placeholder="Inserir seu curso Ex: Front End" />
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Período</legend>
+                    <div class="conteiner-form">
+                        <input type="radio" id="manhã" name="período" value="manhã">
+                        <label for="manhã">Manhã</label>
+    
+                        <input type="radio" id="tarde" name="período" value="tarde">
+                        <label for="tarde">Tarde</label>
+    
+                        <input type="radio" id="noite" name="período" value="noite">
+                        <label for="noite">Noite</label>
+                    </div>
+                </fieldset>
+            </li>
+        </ul>
+        <div class="container-enviar">
+            <button class="btn" type="submit" value="Enviar">Enviar</button>
+        </div>
+    </form>
+    
+</body>
+</html>
