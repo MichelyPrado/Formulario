@@ -1,56 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <link rel="stylesheet" href="form.css">
-    <script src="script.js"></script>
-</head>
-<body>
-    <form>
-        <h1>Fazer Matrícula </h1>
-        <ul>
-            <li>
-                <label for="name">Nome:</label>
-                <br>
-                <input type="text" id="name" name="name" placeholder="Inserir seu primeiro nome Ex: José"/>
-            </li>
-            <li>
-                <label for="lastname">Sobrenome:</label>
-                <br>
-                <input type="text" id="lastname" name="lastname" placeholder="Inserir seu sobrenome  Ex: Silva"/>
-            </li>
-            <li>
-                <label for="email">E-mail:</label>
-                <br>
-                <input type="email" id="email" name="email" autocomplete="off" placeholder="Inserir seu e-mail Ex: josesilva@gmail.com"/>
-            </li>
-            <li>
-                <label for="curso">Curso desejado:</label>
-                <br>
-                <input type="name" id="curso" name="curso" placeholder="Inserir seu curso Ex: Front End" />
-            </li>
-            <li>
-                <fieldset>
-                    <legend>Período</legend>
-                    <div class="conteiner-form">
-                        <input type="radio" id="manhã" name="período" value="manhã">
-                        <label for="manhã">Manhã</label>
-    
-                        <input type="radio" id="tarde" name="período" value="tarde">
-                        <label for="tarde">Tarde</label>
-    
-                        <input type="radio" id="noite" name="período" value="noite">
-                        <label for="noite">Noite</label>
-                    </div>
-                </fieldset>
-            </li>
-        </ul>
-        <div class="container-enviar">
-            <button class="btn" type="submit" value="Enviar">Enviar</button>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+        <title>Formulário</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Criar Uma Conta</h2>
+            </div>
+
+            <form id="form" class="form">
+                <div class="form-control">
+                    <label for="username">Nome de usuário</label>
+                    <input type="text" id="username" placeholder="Digite seu nome Ex: Cremilda"/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail Ex: cremilda@gmail.com"/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha de 6 dígitos"/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="passwordConfirm">Confirmação de Senha</label>
+                    <input type="password" id="passwordConfirm" placeholder="Confirme sua senha"/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <small>Mensagem de erro</small>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>    
         </div>
-    </form>
-    
-</body>
+
+        <script 
+            src="https://kit.fontawesome.com/701ffbc12f.js" crossorigin="anonymous">
+        </script>
+        <script src="./script.js"></script>
+    </body>
 </html>
